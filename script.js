@@ -53,7 +53,7 @@ var container = document.querySelector("#container");
 var repos;
 var commandHistory = [];
 var historyIndex;
-var whois = [
+var whoisData = [
     {
         command: "Name",
         description: "Mario Monaco"
@@ -133,7 +133,7 @@ function cmdHelp(args) {
 }
 
 function whois(args) {
-    createTable(whois, ['what', 'description']);
+    createTable(whoisData, ['what', 'description']);
 }
 
 function curriculum(args) {
