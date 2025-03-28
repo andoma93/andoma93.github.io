@@ -7,23 +7,23 @@ const pureBlack = '#000';
 
 // misc constants
 const urlRegex = "^https?:\\\/\\\/(www.)?[a-z0-9-_]+\\.[a-z]+(\\\/?[a-zA-Z0-9#-_]+\\\/?)*";
-const username = "dev-angelist";
+const username = "andoma93";
 const socialMediaLinks = [
     {
         site: "Twitter",
-        url: "https://twitter.com/dev4ngelist",
+        url: "https://twitter.com/4nd0ma93",
     },
     {
-        site: "Medium",
-        url: "https://medium.com/@dev-angelist",
+        site: "Instagram (private)",
+        url: "https://instagram.com/and0m493",
     },
     {
        site: "Personal Website/Blog",
-       url: "https://dev-angelist.gitbook.io/",
+       url: "https://andoma93.gitbook.io/",
     },
     {
         site: "Github",
-        url: "https://github.com/dev-angelist",
+        url: "https://github.com/andoma93",
     },
 ];
 
