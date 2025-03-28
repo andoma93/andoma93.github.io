@@ -1,2 +1,2 @@
 # My Developer Portfolio
-View my developer portfolio here: http://dev-angelist.github.io
+View my developer portfolio here: http://andoma93.github.io
