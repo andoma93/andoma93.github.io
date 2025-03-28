@@ -10,12 +10,16 @@ const urlRegex = "^https?:\\\/\\\/(www.)?[a-z0-9-_]+\\.[a-z]+(\\\/?[a-zA-Z0-9#-_
 const username = "andoma93";
 const socialMediaLinks = [
     {
+       site: "LinkedIn",
+       url: "https://www.linkedin.com/in/mario-monaco/",
+    },
+    {
         site: "Twitter",
         url: "https://twitter.com/4nd0ma93",
     },
     {
         site: "Instagram (Private)",
-        url: "https://instagram.com/and0m493",
+        url: "https://www.instagram.com/and0m493/",
     },
     {
        site: "Personal Website/Blog",
