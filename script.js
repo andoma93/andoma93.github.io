@@ -53,7 +53,39 @@ var container = document.querySelector("#container");
 var repos;
 var commandHistory = [];
 var historyIndex;
+var whois = [
+    {
+        command: "Name",
+        description: "Mario Monaco"
+    },
+    {
+        command: "Age",
+        description: "31"
+    },
+    {
+        command: "Role",
+        description: "Engineering Manager"
+    },
+    {
+        command: "What i like",
+        description: "Traveling (who doesn't?) ✈️�"
+    },
+    {
+        command: "Summary",
+        description: "Engineering leader with a strong technical background and a passion for building high-performing teams. I’ve worked across multiple roles — from developer to architect to agile coach — which helps me connect the dots between technology, people, and business goals. I care deeply about team culture, clear communication, and creating an environment where engineers can do their best work. I thrive in fast-paced environments and love turning complexity into clarity, always with a hands-on mindset and a focus on delivering value."
+    },
+];
 var commands = [
+    {
+        command: "whois",
+        description: "Who is Mario?",
+        action: whois
+    },
+    {
+        command: "curriculum",
+        description: "Download my CV",
+        action: curriculum
+    },
     {
         command: "help",
         description: "Show help",
@@ -97,6 +129,14 @@ window.addEventListener('load', () => {
 
 // command handlers
 function cmdHelp(args) {
+    createTable(commands, ['command', 'description']);
+}
+
+function whois(args) {
+    createTable(whois, ['what', 'description']);
+}
+
+function curriculum(args) {
     createTable(commands, ['command', 'description']);
 }
 
