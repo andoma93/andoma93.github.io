@@ -27,6 +27,12 @@ const socialMediaLinks = [
     },
 ];
 
+const curriculumData = [
+    {
+        link: "Link",
+        href: "https://raw.githubusercontent.com/andoma93/andoma93.github.io/refs/heads/main/cv.pdf",
+    }
+];
 
 const WelcomeAscii = [
     "▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓",
@@ -55,23 +61,23 @@ var commandHistory = [];
 var historyIndex;
 var whoisData = [
     {
-        command: "Name",
+        what: "Name",
         description: "Mario Monaco"
     },
     {
-        command: "Age",
+        what: "Age",
         description: "31"
     },
     {
-        command: "Role",
+        what: "Role",
         description: "Engineering Manager"
     },
     {
-        command: "What i like",
+        what: "What i like",
         description: "Traveling (who doesn't?) ✈️�"
     },
     {
-        command: "Summary",
+        what: "Summary",
         description: "Engineering leader with a strong technical background and a passion for building high-performing teams. I’ve worked across multiple roles — from developer to architect to agile coach — which helps me connect the dots between technology, people, and business goals. I care deeply about team culture, clear communication, and creating an environment where engineers can do their best work. I thrive in fast-paced environments and love turning complexity into clarity, always with a hands-on mindset and a focus on delivering value."
     },
 ];
@@ -137,7 +143,7 @@ function whois(args) {
 }
 
 function curriculum(args) {
-    createTable(commands, ['command', 'description']);
+    createTable(curriculumData, ['link', 'href'], 'url');
 }
 
 function cmdClear(args) {
